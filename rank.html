@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<script src="cvar.js"></script>
+<script src="stat.js"></script>
+
+
+</head>
+
+<body style='text-align:center;font-family:Times New Roman;font-size:14pt;font-weight:bold'>Обратные функции распределения
+<br><br>
+Процентные точки распределения коэффициента вариации
+<br><br>
+<button type="button" title="Процентные точки распределения коэффициента вариации точное решение" onClick=datacvar(0) >Cvar_exact</button>
+<button type="button" title="Аппроксимация МакКея" onClick=datacvar(1)>Cvar_McKey</button>
+<button type="button" title="Процентные точки распределения коэффициента вариации через t-распределение" onClick=datacvar(2)>Cvar_t</button>
+<button type="button" title="Процентные точки распределения коэффициента вариации через аппроксимацию t-распределения" onClick=datacvar(3)>Cvar_t_App_prncst</button>
+<button type="button" title="Процентные точки распределения коэффициента вариации через аппроксимацию t-распределения" onClick=datacvar(4)>Cvar_t_sf54r</button>
+<br><br>
+Процентные точки нецентрального распределения Стьюдента
+<br><br>
+<button type="button" title="Процентные точки нецентрального распределения Стьюдента точное решение" onClick=datatquantile(0)>tquantile</button>
+<button type="button" title="Процентные точки нецентрального распределения Стьюдента аппроксимация prncst" onClick=datatquantile(1)>tquantile_prncst</button>
+<button type="button" title="Процентные точки нецентрального распределения Стьюдента аппроксимация sf54r" onClick=datatquantile(2)>tquantile_sf54r</button>
+<br><br>
+Числовые характеристики порядковых статистик
+<br><br>
+<button type="button" title="Мат.ожидания и дисперсии нормальных порядковых статистик точное решение" onClick=dataorder(0)>Exact Order Normall</button>
+<button type="button" title="Мат.ожидания и дисперсии нормальных порядковых статистик аппроксимация Дэйвида-Джонсона" onClick=dataorder(1)>Approximation Order Normall</button>
+<button type="button" title="Мат.ожидания и дисперсии вейбулловских порядковых статистик точное решение" onClick=dataorder(2)>Exact Order Weibull</button>
+<button type="button" title="Мат.ожидания и дисперсии вейбулловских порядковых статистик аппроксимация Дэйвида-Джонсона" onClick=dataorder(3)>Approximation Order Weibull</button>
+
+<p>Download Cvar_Js</p>
+<br>
+<a href="cvar.js" download>Скачать файл cvar.js</a>
+<br>
+<a href="stat.js" download>Скачать файл stat.js</a>
+<br>
+</body>
+
+<a href="rank.txt" download>Скачать файл rank.html</a>
+<br>
+</body>
+</html>
